@@ -34,9 +34,10 @@ text-align: center;
 }
 .products-grid{
       gap: 20px;
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-     /* how many columns we taking */
+      display: flex;
+      justify-content: center;
+      align-items: center;  
+     /* justify content means x axis side align items y axis side position of the content */
 
 }
 .products{
@@ -133,7 +134,7 @@ h2,h3{
     .products-grid{
         gap: 20px;
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3);
        /* how many columns we taking */
   
   }
