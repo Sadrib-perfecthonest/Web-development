@@ -34,10 +34,9 @@ text-align: center;
 }
 .products-grid{
       gap: 20px;
-      display: flex;
-     justify-content: center;
-     align-items: center;
-     
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+     /* how many columns we taking */
 
 }
 .products{
@@ -47,10 +46,10 @@ text-align: center;
 .product-card{
     
     background-color: #1f1f1f;
-    padding: 20px;
+    padding: 30px;
     border-radius: 8px;
     text-align: center;
-    width: calc(33.33% - 20px);
+   
     box-sizing: border-box;
     
 }
@@ -119,6 +118,7 @@ h2,h3{
 }
 .contact button:hover{
    background-color: #555555;
+
 }
 
 
@@ -126,5 +126,16 @@ h2,h3{
     text-align: center;
     background-color: #1f1f1f;
     padding: 10px;
-    
+
+}
+/* Media query for tab and phone page size say in phone and tab  say in one page one or two product */
+@media(max-width: 768px){
+    .products-grid{
+        gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+       /* how many columns we taking */
+  
+  }
+  
 }
